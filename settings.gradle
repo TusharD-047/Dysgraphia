@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Dysgraphia"
-include ':app'
+include ':app',':tracinglibrary'
