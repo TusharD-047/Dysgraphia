@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dysgraphia">
         <activity
+            android:name=".alpha_home"
+            android:exported="false" />
+        <activity
+            android:name=".num_home"
+            android:exported="false" />
+        <activity
+            android:name=".gender"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
