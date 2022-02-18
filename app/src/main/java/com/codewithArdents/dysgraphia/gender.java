@@ -7,6 +7,7 @@ import android.widget.RadioGroup;
 
 public class gender extends AppCompatActivity {
     private RadioGroup radiogrp;
+    private Object View;
 
 
     @Override
@@ -35,6 +36,8 @@ public class gender extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 }
