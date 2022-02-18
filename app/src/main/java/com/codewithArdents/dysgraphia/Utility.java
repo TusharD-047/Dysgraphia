@@ -50,4 +50,15 @@ public class Utility {
         SharedPreferences sharedPreferences = activity.getSharedPreferences("user", MODE_PRIVATE);
         return sharedPreferences.getInt("name", 1);
     }
+
+    public static void setValue(Activity activity,int name){
+        SharedPreferences sharedPreferences = activity.getSharedPreferences("user", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("value", name).apply();
+    }
+
+    public static Integer getValue(Activity activity) {
+        SharedPreferences sharedPreferences = activity.getSharedPreferences("user", MODE_PRIVATE);
+        return sharedPreferences.getInt("value", 0);
+    }
 }
