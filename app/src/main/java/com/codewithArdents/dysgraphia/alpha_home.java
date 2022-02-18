@@ -2,6 +2,7 @@ package com.codewithArdents.dysgraphia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +19,7 @@ public class alpha_home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"Next",Toast.LENGTH_SHORT).show();
-
+                startActivity(new Intent(alpha_home.this,LetterSelection.class));
             }
         });
 
