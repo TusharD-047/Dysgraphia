@@ -5,13 +5,12 @@
       <map>
         <entry key="..\:/Dysgraphia/app/src/main/res/drawable/custom_edittext.xml" value="0.169" />
         <entry key="..\:/Dysgraphia/app/src/main/res/drawable/rounded_corner.xml" value="0.169" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_alpha_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_gender.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_homepage.xml" value="0.25416666666666665" />
         <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_num_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tushar Dupga/StudioProjects/Dysgraphia/app/src/main/res/layout/activity_alpha_home.xml" value="0.264" />
+        <entry key="..\:/Users/Tushar Dupga/StudioProjects/Dysgraphia/app/src/main/res/layout/activity_gender.xml" value="0.12183383991894631" />
+        <entry key="..\:/Users/Tushar Dupga/StudioProjects/Dysgraphia/app/src/main/res/layout/activity_main.xml" value="0.12183383991894631" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
