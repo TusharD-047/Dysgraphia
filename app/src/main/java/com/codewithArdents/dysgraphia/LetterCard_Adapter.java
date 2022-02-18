@@ -2,6 +2,7 @@ package com.codewithArdents.dysgraphia;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,10 +19,12 @@ public class LetterCard_Adapter extends RecyclerView.Adapter<LetterCard_Adapter.
 
     Context context;
     ArrayList<Integer> letterlist;
+    ArrayList<Integer> colors;
 
-    public LetterCard_Adapter(Context context , ArrayList<Integer> letterlist) {
+    public LetterCard_Adapter(Context context , ArrayList<Integer> letterlist, ArrayList<Integer> colors ) {
         this.context = context;
         this.letterlist = letterlist;
+        this.colors = colors;
     }
 
     @NonNull
@@ -42,6 +45,7 @@ public class LetterCard_Adapter extends RecyclerView.Adapter<LetterCard_Adapter.
             public void onClick(View v) {
                 Intent intent = new Intent(context,LetterDraw.class);
                 intent.putExtra("letter",holder.getAdapterPosition()+1);
+                intent.putExtra("color",colors.get(holder.getAdapterPosition()));
                 Log.e("pos"," "+holder.getAdapterPosition());
                 context.startActivity(intent);
             }

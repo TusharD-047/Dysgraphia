@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -17,6 +18,8 @@ public class LetterSelection extends AppCompatActivity {
         setContentView(R.layout.activity_letter_selection);
         rv = findViewById(R.id.letters_recycler);
         ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> color = new ArrayList<>();
+
         list.add(R.drawable.letter_a);
         list.add(R.drawable.letter_b);
         list.add(R.drawable.letter_c);
@@ -44,7 +47,11 @@ public class LetterSelection extends AppCompatActivity {
         list.add(R.drawable.letter_y);
         list.add(R.drawable.letter_z);
 
-        LetterCard_Adapter card_adapter = new LetterCard_Adapter(this,list);
+        String[] str = getResources().getStringArray(R.array.alpha_colors);
+        for (String s : str) {
+            color.add(Color.parseColor(s));
+        }
+        LetterCard_Adapter card_adapter = new LetterCard_Adapter(this,list,color);
         rv.setAdapter(card_adapter);
         rv.setLayoutManager(new GridLayoutManager(getApplicationContext(),3));
     }

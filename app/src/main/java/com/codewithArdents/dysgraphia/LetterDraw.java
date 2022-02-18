@@ -21,20 +21,19 @@ import com.danny_jiang.tracinglibrary.view.TracingLetterView;
 public class LetterDraw extends AppCompatActivity {
 
     TracingLetterView letterView;
-    LottieAnimationView animationView;
-    LinearLayout layout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letter_draw);
         letterView = findViewById(R.id.letter_view);
         int letterchar = getIntent().getIntExtra("letter",-1);
+        int letter_color = getIntent().getIntExtra("color",-1);
         Log.e("letterview","yes");
-        setLetterView(letterView,letterchar);
+        setLetterView(letterView,letterchar,letter_color);
     }
-    private void setLetterView(TracingLetterView letterView , int letterchar) {
+    private void setLetterView(TracingLetterView letterView , int letterchar , int letter_color) {
         letterView.setLetterChar(letterchar);
-        letterView.setPointColor(Color.BLUE);
+        letterView.setStrokeColor(letter_color);
         letterView.setInstructMode(true);
         letterView.setTracingListener(new TracingLetterView.TracingListener() {
             @Override

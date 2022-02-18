@@ -20,6 +20,7 @@ public class num_home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"Next",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(num_home.this,NumberSelection.class));
 
             }
         });
