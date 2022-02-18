@@ -27,6 +27,7 @@ import android.graphics.drawable.Drawable;
 import android.support.annotation.ColorInt;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -185,7 +186,7 @@ public class TracingLetterView extends View {
             viewWidth = getWidth();
             viewHeight = getHeight();
 
-            processingPaint.setStrokeWidth(viewHeight / 9f);
+            processingPaint.setStrokeWidth(viewHeight / 7.5f);
             viewRect = new RectF();
             viewRect.set(0, 0, viewWidth, viewHeight);
             anchorScale = viewHeight / (8.5f * anchorBitmap.getHeight());
@@ -225,6 +226,10 @@ public class TracingLetterView extends View {
                 anchorPos.y - anchorBitmap.getHeight() * anchorScale / 2,
                 anchorPos.x + anchorBitmap.getWidth() * anchorScale / 2,
                 anchorPos.y + anchorBitmap.getHeight() * anchorScale / 2);
+        if(anchorBitmap.isRecycled())
+        {
+            Log.e("anchor","recyled");
+        }
         canvas.drawBitmap(anchorBitmap, anchorRect, scaleRect, mPaint);
     }
 
@@ -413,16 +418,16 @@ public class TracingLetterView extends View {
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         if (traceBitmap != null) {
-            traceBitmap.recycle();
             traceBitmap = null;
+            Log.e("library","Detached trace");
         }
         if (anchorBitmap != null) {
-            anchorBitmap.recycle();
             anchorBitmap = null;
+            Log.e("library","Detached anchor");
         }
         if (letterBitmap != null) {
-            letterBitmap.recycle();
             letterBitmap = null;
+            Log.e("library","Detached letter");
         }
     }
 

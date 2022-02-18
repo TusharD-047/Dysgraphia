@@ -19,6 +19,14 @@
             android:name=".num_home"
             android:exported="false" />
         <activity
+            android:name=".LetterDraw"
+            android:exported="false" />
+
+        <activity
+            android:name=".LetterSelection"
+            android:exported="true" >
+        </activity>
+        <activity
             android:name=".gender"
             android:exported="true" >
 
