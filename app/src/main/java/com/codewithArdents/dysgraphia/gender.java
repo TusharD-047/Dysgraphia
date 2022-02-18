@@ -20,7 +20,7 @@ public class gender extends AppCompatActivity {
         setContentView(R.layout.activity_gender);
 
         if(!Utility.getName(this).equals("")){
-            startActivity(new Intent(com.codewithArdents.dysgraphia.gender.this,alpha_home.class));
+            startActivity(new Intent(com.codewithArdents.dysgraphia.gender.this,homepage.class));
         }
 
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogrp);

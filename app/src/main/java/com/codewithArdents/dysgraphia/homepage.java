@@ -11,16 +11,15 @@ import android.widget.Toast;
 
 public class homepage extends AppCompatActivity {
 
-    CardView cv1 = findViewById(R.id.cardView1);
-    CardView cv2 = findViewById(R.id.cardView2);
-    CardView cv3 = findViewById(R.id.cardView3);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-
+        CardView cv1 = findViewById(R.id.cardView1);
+        CardView cv2 = findViewById(R.id.cardView2);
+        CardView cv3 = findViewById(R.id.cardView3);
         TextView v = findViewById(R.id.home_name);
         v.setText(Utility.getName(this));
 

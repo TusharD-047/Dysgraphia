@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     Utility.setGender(MainActivity.this,"Male");
                     Utility.setName(MainActivity.this,name.getText().toString());
                     Utility.setPhoto(MainActivity.this,photoUri);
-                    startActivity(new Intent(MainActivity.this,alpha_home.class));
+                    startActivity(new Intent(MainActivity.this,homepage.class));
                 }
             }
         });
