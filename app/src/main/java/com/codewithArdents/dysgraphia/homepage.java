@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class homepage extends AppCompatActivity {
@@ -20,6 +21,8 @@ public class homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
 
+        TextView v = findViewById(R.id.home_name);
+        v.setText(Utility.getName(this));
 
         cv1.setOnClickListener(new View.OnClickListener() {
             @Override

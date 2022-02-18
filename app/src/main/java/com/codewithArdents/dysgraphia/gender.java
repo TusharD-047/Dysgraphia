@@ -2,18 +2,26 @@ package com.codewithArdents.dysgraphia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RadioGroup;
+import android.widget.Toast;
+
+import java.util.Locale;
 
 public class gender extends AppCompatActivity {
-    private RadioGroup radiogrp;
-    private Object View;
 
+    private String gender="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gender);
+
+        if(!Utility.getName(this).equals("")){
+            startActivity(new Intent(com.codewithArdents.dysgraphia.gender.this,alpha_home.class));
+        }
 
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogrp);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
@@ -25,11 +33,12 @@ public class gender extends AppCompatActivity {
                     case R.id.custom_button1:
                         findViewById(R.id.custom_button1).setBackground(getResources().getDrawable(R.drawable.r_boy));
                         findViewById(R.id.custom_button2).setBackground(getResources().getDrawable(R.drawable.girl));
-
+                        gender = "Male";
                         break;
                     case R.id.custom_button2:
                         findViewById(R.id.custom_button2).setBackground(getResources().getDrawable(R.drawable.r_girl));
                         findViewById(R.id.custom_button1).setBackground(getResources().getDrawable(R.drawable.boy));
+                        gender = "Female";
                         break;
                 }
 
@@ -38,6 +47,19 @@ public class gender extends AppCompatActivity {
         });
 
 
+
+        findViewById(R.id.gender_next).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (gender.equals("")){
+                    Toast.makeText(gender.this, "Please Select the Gender", Toast.LENGTH_SHORT).show();
+                }else if(gender.equals("Male")){
+                    startActivity(new Intent(com.codewithArdents.dysgraphia.gender.this,MainActivity.class));
+                }else{
+                    startActivity(new Intent(com.codewithArdents.dysgraphia.gender.this,MainActivity.class));
+                }
+            }
+        });
 
     }
 }
