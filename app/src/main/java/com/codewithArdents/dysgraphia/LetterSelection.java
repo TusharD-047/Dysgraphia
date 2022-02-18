@@ -17,6 +17,9 @@ public class LetterSelection extends AppCompatActivity {
         setContentView(R.layout.activity_letter_selection);
         rv = findViewById(R.id.letters_recycler);
         ArrayList<Integer> list = new ArrayList<>();
+
+
+
         list.add(R.drawable.letter_a);
         list.add(R.drawable.letter_b);
         list.add(R.drawable.letter_c);
