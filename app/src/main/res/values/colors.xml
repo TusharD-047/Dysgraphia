@@ -7,4 +7,31 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="A">#E93B38</color>
+    <color name="B">#6E9ED4</color>
+    <color name="C">#7BC043</color>
+    <color name="D">#F79F61</color>
+    <color name="E">#70C9BD</color>
+    <color name="F">#DDE11F</color>
+    <color name="G">#3AB8D5</color>
+    <color name="H">#95488B</color>
+    <color name="I">#FEDC36</color>
+    <color name="J">#6E9ED4</color>
+    <color name="K">#EE5A82</color>
+    <color name="L">#F8971D</color>
+    <color name="M">#2CAE4E</color>
+    <color name="N">#EF4054</color>
+    <color name="O">#FEBF34</color>
+    <color name="P">#91CB80</color>
+    <color name="Q">#EE5A82</color>
+    <color name="R">#355EAA</color>
+    <color name="S">#F7EA00</color>
+    <color name="T">#9ADAEF</color>
+    <color name="U">#D41B64</color>
+    <color name="V">#FFD453</color>
+    <color name="W">#07B9AB</color>
+    <color name="X">#CC69A9</color>
+    <color name="Y">#00A7E2</color>
+    <color name="Z">#A8BD3E</color>
 </resources>
