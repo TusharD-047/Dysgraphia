@@ -46,39 +46,32 @@ public class LetterCard_Adapter extends RecyclerView.Adapter<LetterCard_Adapter.
         holder.imgview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(Utility.getValue((Activity) context)==0){
-                    Utility.setValue(((Activity) context),1 );
-                    Intent intent = new Intent(context,LetterStory.class);
-                    if(!isNum)
-                    {
+                if(!isNum)
+                {
+                    if(Utility.getValue((Activity) context)==0){
+                        Utility.setValue(((Activity) context),1 );
+                        Intent intent = new Intent(context,LetterStory.class);
                         intent.putExtra("letter",holder.getAdapterPosition()+1);
+                        intent.putExtra("color",colors.get(holder.getAdapterPosition()));
+                        Log.e("pos"," "+holder.getAdapterPosition());
+                        context.startActivity(intent);
+                    }else{
+                        Intent intent = new Intent(context,LetterDraw.class);
+                        intent.putExtra("color",colors.get(holder.getAdapterPosition()));
+                        intent.putExtra("letter",holder.getAdapterPosition()+1);
+                        Log.e("pos"," "+holder.getAdapterPosition());
+                        context.startActivity(intent);
                     }
-                    else
-                    {
-                        intent.putExtra("letter",holder.getAdapterPosition()+30);
-                    }
-                    intent.putExtra("color",colors.get(holder.getAdapterPosition()));
-                    Log.e("pos"," "+holder.getAdapterPosition());
-                    context.startActivity(intent);
-                }else{
+                }
+                else
+                {
                     Intent intent = new Intent(context,LetterDraw.class);
-                    if(!isNum)
-                    {
-                        intent.putExtra("letter",holder.getAdapterPosition()+1);
-                    }
-                    else
-                    {
-                        intent.putExtra("letter",holder.getAdapterPosition()+30);
-                    }
-                    intent.putExtra("color",colors.get(holder.getAdapterPosition()));
-                    Log.e("pos"," "+holder.getAdapterPosition());
+                    intent.putExtra("letter",holder.getAdapterPosition()+30);
                     context.startActivity(intent);
                 }
-                Intent intent = new Intent(context,LetterDraw.class);
-
 
                 Log.e("pos"," "+holder.getAdapterPosition());
-                context.startActivity(intent);
+
             }
         });
     }

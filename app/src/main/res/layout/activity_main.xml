@@ -79,7 +79,7 @@
         app:np_max="59"
         app:np_min="0"
         app:np_dividerThickness="0dp"
-        app:np_value="3" />
+        app:np_value="0" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="70dp"

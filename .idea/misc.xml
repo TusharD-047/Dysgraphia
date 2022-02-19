@@ -4,19 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Dysgraphia/app/src/main/res/drawable/custom_edittext.xml" value="0.169" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/drawable/girl_bg.xml" value="0.165" />
         <entry key="..\:/Dysgraphia/app/src/main/res/drawable/rounded_corner.xml" value="0.169" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_alpha_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_gender.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_help.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_homepage.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_letter_selection.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_letter_story.xml" value="0.25416666666666665" />
         <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/layout/activity_num_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Dysgraphia/app/src/main/res/menu/home_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/drawable/boy_bg.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/drawable/btn_bg.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/drawable/custom_btn.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/drawable/custom_button.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/drawable/r_girl.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/drawable/rounded_corner.xml" value="0.1375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/layout/activity_alpha_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/layout/activity_gender.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/layout/activity_main.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Dysgraphia/app/src/main/res/layout/activity_num_home.xml" value="0.264" />
+        <entry key="..\:/Users/Tushar Dupga/StudioProjects/Dysgraphia/app/src/main/res/layout/activity_homepage.xml" value="0.13269927536231885" />
+        <entry key="..\:/Users/Tushar Dupga/StudioProjects/Dysgraphia/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
