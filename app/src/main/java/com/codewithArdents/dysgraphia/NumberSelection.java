@@ -35,7 +35,7 @@ public class NumberSelection extends AppCompatActivity {
             color.add(Color.parseColor(str[i]));
         }
 
-        LetterCard_Adapter adapter = new LetterCard_Adapter(this,list,color);
+        LetterCard_Adapter adapter = new LetterCard_Adapter(this,list,color,true);
         rv.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
         rv.setAdapter(adapter);
     }

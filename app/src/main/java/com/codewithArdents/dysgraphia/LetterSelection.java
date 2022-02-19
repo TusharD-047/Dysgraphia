@@ -51,7 +51,7 @@ public class LetterSelection extends AppCompatActivity {
         for (String s : str) {
             color.add(Color.parseColor(s));
         }
-        LetterCard_Adapter card_adapter = new LetterCard_Adapter(this,list,color);
+        LetterCard_Adapter card_adapter = new LetterCard_Adapter(this,list,color,false);
         rv.setAdapter(card_adapter);
         rv.setLayoutManager(new GridLayoutManager(getApplicationContext(),3));
     }
