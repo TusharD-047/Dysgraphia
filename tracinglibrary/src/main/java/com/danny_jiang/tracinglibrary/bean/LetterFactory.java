@@ -33,6 +33,16 @@ public class LetterFactory {
     public static final int X = W + 1;
     public static final int Y = X + 1;
     public static final int Z = Y + 1;
+    public static final int zero = 30;
+    public static final int one = 31;
+    public static final int two = 32;
+    public static final int three = 33;
+    public static final int four = 34;
+    public static final int five = 35;
+    public static final int six = 36;
+    public static final int seven = 37;
+    public static final int eight = 38;
+    public static final int nine = 39;
 
     public String getLetterAssets() {
         return "letter/" + letter + "_bg.png";
@@ -49,7 +59,9 @@ public class LetterFactory {
     @IntDef({A, B, C, D, E, F, G,
             H, I, J, K, L, M, N,
             O, P, Q, R, S, T,
-            U, V, W, X, Y, Z})
+            U, V, W, X, Y, Z,one,
+            two,three,four,five,
+            six,seven,eight,nine})
     @Retention(RetentionPolicy.SOURCE)
     public @interface Letter {
     }

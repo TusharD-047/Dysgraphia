@@ -44,7 +44,7 @@ public class LetterCard_Adapter extends RecyclerView.Adapter<LetterCard_Adapter.
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,LetterDraw.class);
-                intent.putExtra("letter",holder.getAdapterPosition()+1);
+                intent.putExtra("letter",holder.getAdapterPosition()+30);
                 intent.putExtra("color",colors.get(holder.getAdapterPosition()));
                 Log.e("pos"," "+holder.getAdapterPosition());
                 context.startActivity(intent);

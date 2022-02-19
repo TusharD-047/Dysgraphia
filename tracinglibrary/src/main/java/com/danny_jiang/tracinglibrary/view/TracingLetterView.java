@@ -186,7 +186,7 @@ public class TracingLetterView extends View {
             viewWidth = getWidth();
             viewHeight = getHeight();
 
-            processingPaint.setStrokeWidth(viewHeight / 7.5f);
+            processingPaint.setStrokeWidth(viewHeight / 9f);
             viewRect = new RectF();
             viewRect.set(0, 0, viewWidth, viewHeight);
             anchorScale = viewHeight / (8.5f * anchorBitmap.getHeight());
