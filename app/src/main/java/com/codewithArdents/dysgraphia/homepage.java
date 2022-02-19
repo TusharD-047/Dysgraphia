@@ -4,13 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class homepage extends AppCompatActivity {
 
@@ -24,8 +31,10 @@ public class homepage extends AppCompatActivity {
         CardView cv2 = findViewById(R.id.cardView2);
         CardView cv3 = findViewById(R.id.cardView3);
         TextView v = findViewById(R.id.home_name);
+        CircleImageView circleImageView = findViewById(R.id.profile_pic);
         v.setText(Utility.getName(this));
 
+        Glide.with(this).load(Utility.getPhoto(this)).into(circleImageView);
         cv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

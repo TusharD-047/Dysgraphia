@@ -46,9 +46,9 @@ public class Utility {
         editor.putString("photo", name).apply();
     }
 
-    public static Integer getPhoto(Activity activity) {
+    public static String getPhoto(Activity activity) {
         SharedPreferences sharedPreferences = activity.getSharedPreferences("user", MODE_PRIVATE);
-        return sharedPreferences.getInt("name", 1);
+        return sharedPreferences.getString("photo", "null");
     }
 
     public static void setValue(Activity activity,int name){

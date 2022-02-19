@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 final Uri imageUri = data.getData();
                 final InputStream imageStream = getContentResolver().openInputStream(imageUri);
                 final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
-                photoUri = selectedImage.toString();
+                photoUri = imageUri.toString();
                 ImageView v = findViewById(R.id.imageview);
                 v.setImageBitmap(selectedImage);
                 isImage = true;
