@@ -5,6 +5,9 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,9 +47,37 @@ public class homepage extends AppCompatActivity {
                 cv3.getContext().startActivity(new Intent(cv3.getContext(), num_home.class));
             }
         });
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.home_menu, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout_menu:
+                Utility.setName(this,"");
+                Utility.setPhoto(this,"");
+                Utility.setGender(this,"");
+                Utility.setAge(this,0);
+                Utility.setValue(this,0);
+                startActivity(new Intent(homepage.this,gender.class));
+                return true;
+            case R.id.help_menu:
+                // Do whatever you want to do on logout click.
+                startActivity(new Intent(homepage.this,HelpActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
-
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
     }
 }

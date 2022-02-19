@@ -6,30 +6,31 @@
     android:layout_height="match_parent"
     android:background="#F4F7F9"
     tools:context=".homepage">
-<LinearLayout
-    android:id="@+id/layout1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="40dp"
-        android:textSize="30dp"
-        android:textStyle="italic"/>
-    <TextView
-        android:id="@+id/home_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="40dp"
-        android:textSize="20dp"
-        android:textStyle="italic"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="30dp"
+            android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -99,7 +100,7 @@
             android:translationZ="5dp" />
 
 
-        //second card
+<!--        second card-->
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
@@ -167,7 +168,9 @@
             android:adjustViewBounds="false"
             android:elevation="5dp"
             android:src="@drawable/pink" />
-        //third card
+
+
+<!--        third card-->
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
@@ -236,5 +239,6 @@
             android:elevation="5dp"
             android:src="@drawable/butterfly"
             android:translationZ="5dp" />
+
     </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

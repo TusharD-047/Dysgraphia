@@ -54,9 +54,13 @@ public class gender extends AppCompatActivity {
                 if (gender.equals("")){
                     Toast.makeText(gender.this, "Please Select the Gender", Toast.LENGTH_SHORT).show();
                 }else if(gender.equals("Male")){
-                    startActivity(new Intent(com.codewithArdents.dysgraphia.gender.this,MainActivity.class));
+                    Intent i = new Intent(com.codewithArdents.dysgraphia.gender.this,MainActivity.class);
+                    i.putExtra("gender",0);
+                    startActivity(i);
                 }else{
-                    startActivity(new Intent(com.codewithArdents.dysgraphia.gender.this,MainActivity.class));
+                    Intent i = new Intent(com.codewithArdents.dysgraphia.gender.this,MainActivity.class);
+                    i.putExtra("gender",1);
+                    startActivity(i);
                 }
             }
         });

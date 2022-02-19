@@ -22,6 +22,11 @@ public class alpha_home extends AppCompatActivity {
                 startActivity(new Intent(alpha_home.this,LetterSelection.class));
             }
         });
+    }
 
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(alpha_home.this,homepage.class));
+        finish();
     }
 }

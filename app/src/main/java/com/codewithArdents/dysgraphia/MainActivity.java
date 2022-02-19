@@ -1,6 +1,7 @@
 package com.codewithArdents.dysgraphia;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.shawnlin.numberpicker.NumberPicker;
@@ -33,7 +35,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        int k = getIntent().getIntExtra("gender",0);
+        LinearLayout ll = findViewById(R.id.ll1);
+        ImageView imgv = findViewById(R.id.imageview);
+        ImageView imgv2 = findViewById(R.id.camera_bg_small);
+        AppCompatButton butn = findViewById(R.id.profile_next);
         numberPicker = findViewById(R.id.number_picker);
+
+        if (k==1){
+            ll.setBackground(getDrawable(R.drawable.age_bg2));
+            imgv.setImageResource(R.drawable.girl_dummy);
+            imgv2.setImageResource(R.drawable.camera_bg2);
+            butn.setTextColor(getResources().getColor(R.color.girl_color));
+            numberPicker.setSelectedTextColor(getResources().getColor(R.color.girl_color));
+        }
+
         name = findViewById(R.id.profile_name);
 
         numberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {

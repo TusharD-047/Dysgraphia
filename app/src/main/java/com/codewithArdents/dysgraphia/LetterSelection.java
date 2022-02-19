@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -54,5 +55,10 @@ public class LetterSelection extends AppCompatActivity {
         LetterCard_Adapter card_adapter = new LetterCard_Adapter(this,list,color,false);
         rv.setAdapter(card_adapter);
         rv.setLayoutManager(new GridLayoutManager(getApplicationContext(),3));
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(LetterSelection.this,alpha_home.class));
     }
 }

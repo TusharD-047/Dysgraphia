@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/age_bg1"
     android:orientation="vertical"
+    android:id="@+id/ll1"
     tools:context=".MainActivity">
 
     <TextView
@@ -32,6 +33,7 @@
             android:src="@drawable/boys_dummy"
             />
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/camera_bg_small"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="bottom|right"

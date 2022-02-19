@@ -3,6 +3,7 @@ package com.codewithArdents.dysgraphia;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -71,6 +72,7 @@ public class LetterDraw extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lottieAnimationView.cancelAnimation();
+                startActivity(new Intent(LetterDraw.this,LetterSelection.class));
                 finish();
             }
         });
@@ -78,7 +80,7 @@ public class LetterDraw extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        startActivity(new Intent(LetterDraw.this,LetterSelection.class));
         finish();
     }
 }
