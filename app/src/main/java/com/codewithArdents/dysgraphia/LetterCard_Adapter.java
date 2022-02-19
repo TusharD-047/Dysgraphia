@@ -20,11 +20,13 @@ public class LetterCard_Adapter extends RecyclerView.Adapter<LetterCard_Adapter.
     Context context;
     ArrayList<Integer> letterlist;
     ArrayList<Integer> colors;
+    boolean isNum;
 
-    public LetterCard_Adapter(Context context , ArrayList<Integer> letterlist, ArrayList<Integer> colors ) {
+    public LetterCard_Adapter(Context context , ArrayList<Integer> letterlist, ArrayList<Integer> colors, boolean isNum ) {
         this.context = context;
         this.letterlist = letterlist;
         this.colors = colors;
+        this.isNum = isNum;
     }
 
     @NonNull
@@ -44,7 +46,14 @@ public class LetterCard_Adapter extends RecyclerView.Adapter<LetterCard_Adapter.
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,LetterDraw.class);
-                intent.putExtra("letter",holder.getAdapterPosition()+30);
+                if(!isNum)
+                {
+                    intent.putExtra("letter",holder.getAdapterPosition()+1);
+                }
+                else
+                {
+                    intent.putExtra("letter",holder.getAdapterPosition()+30);
+                }
                 intent.putExtra("color",colors.get(holder.getAdapterPosition()));
                 Log.e("pos"," "+holder.getAdapterPosition());
                 context.startActivity(intent);
